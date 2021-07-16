@@ -1,0 +1,3 @@
+[submodule "gptoolbox"]
+	path = gptoolbox
+	url = https://github.com/alecjacobson/gptoolbox.git
