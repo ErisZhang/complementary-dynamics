@@ -1,3 +1,6 @@
 [submodule "gptoolbox"]
 	path = gptoolbox
 	url = https://github.com/alecjacobson/gptoolbox.git
+[submodule "Bartels"]
+	path = Bartels
+	url = https://github.com/dilevin/Bartels.git
