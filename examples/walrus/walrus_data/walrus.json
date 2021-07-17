@@ -1,0 +1,9 @@
+{
+    "mesh_file": "./walrus_data/walrus.obj",
+    "skeleton_file": "./walrus_data/walrus_cage.tgf",
+    "anim_file": "./walrus_data/walrus_user_C.dmat",
+    "dt": 0.005,
+    "YM": 800,
+    "pr": 0.45,
+    "with_dynamics": 1
+}

@@ -1,0 +1,8 @@
+{
+    "image_file": "./amoeba_data/amoeba.png",
+    "dt": 0.056,
+    "mu": 5e1,
+    "lambda": 1e-5,
+    "frame_num": 500,
+    "rendering": false
+}
