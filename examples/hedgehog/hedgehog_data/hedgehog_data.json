@@ -1,0 +1,10 @@
+{
+    "mesh_file": "./hedgehog_data/hedgehog.obj",
+    "constraint_file": "./hedgehog_data/hedgehog_C_idx.dmat",
+    "anim_file": "./hedgehog_data/hedgehog_T.dmat",
+    "dt": 0.01,
+    "YM": 800,
+    "pr": 0.4,
+    "with_dynamics": 1,
+    "frame_num": 5000
+}

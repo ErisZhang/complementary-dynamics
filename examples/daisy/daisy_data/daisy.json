@@ -1,0 +1,10 @@
+{
+    "mesh_file": "./daisy_data/daisy.obj",
+    "handle_file": "./daisy_data/daisy.tgf",
+    "weight_file": "./daisy_data/daisy.dmat",
+    "anim_file": "./daisy_data/daisy_anim.txt",
+    "dt": 0.01,
+    "YM": 300,
+    "pr": 0.4,
+    "with_dynamics": 1
+}

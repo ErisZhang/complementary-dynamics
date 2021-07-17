@@ -1,0 +1,11 @@
+{
+    "mesh_file": "./bird_mouth_data/bird_mouth.obj",
+    "handle_file": "./bird_mouth_data/bird_mouth.tgf",
+    "weight_file": "./bird_mouth_data/bird_mouth.dmat",
+    "anim_file": "./bird_mouth_data/bird_mouth_anim.txt",
+    "dt": 0.01,
+    "YM": 175,
+    "pr": 0.4,
+    "with_dynamics": 1,
+    "frame_num": 5000
+}
