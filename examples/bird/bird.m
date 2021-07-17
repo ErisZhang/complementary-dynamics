@@ -1,5 +1,6 @@
 clear;
 warning('off','all');
+addpath('../../matlab-include/utils');
 set_project_path();
 
 % read json

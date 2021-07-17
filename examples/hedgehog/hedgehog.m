@@ -1,6 +1,7 @@
 clear all;
 warning('off','all');
-% set_project_path();
+addpath('../../matlab-include/utils');
+set_project_path();
 
 % read json
 json = jsondecode(fileread('./hedgehog_data/hedgehog_data.json'));

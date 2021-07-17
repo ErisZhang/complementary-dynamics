@@ -1,5 +1,6 @@
 clear;
 warning('off','all');
+addpath('../../matlab-include/utils');
 set_project_path();
 
 % read json
@@ -13,10 +14,6 @@ V(:,3)=[];
 C(:,3)=[];
 [~,b] = farthest_points(V,5);
 H = kharmonic(V,F,b,linspace(0,1,numel(b))');
-
-[V_list,F_list] = segment_component(V,F);
-V1 = V_list{1,1};
-F1 = F_list{1,1};
 
 T_list = read_2d_pnt_anim(anim_file,C,PI);
 W = save_bbw_pnt(weight_file, V,F,C);
@@ -33,18 +30,6 @@ mesh_scale = max(V(:));
 V = V/mesh_scale;
 C = C - mesh_center;
 C = C/mesh_scale;
-
-
-clf;
-hold on;
-t = tsurf(F,V,'FaceColor',blue,'FaceAlpha',0.8,'EdgeAlpha',0.8);
-hold off;
-axis equal;
-expand_axis(3);
-% axis(5*[-0.5 1.5 -0.3 0.3]);
-axis manual;
-drawnow;
-
 
 vec = @(X) reshape(X',size(X,1)*size(X,2),1);
 
@@ -79,13 +64,22 @@ U = vec(zeros(size(V)));
 Ud = vec(zeros(size(V)));
 Uc = vec(zeros(size(V)));
 
-% visualize the handles
+
+clf;
 hold on;
-D_plot = scatter3( ...
+t = tsurf(F,V,'FaceColor',blue,'FaceAlpha',0.8,'EdgeAlpha',0.8);
+C_plot = scatter3( ...
 C(:,1),C(:,2),0*C(:,1), ... 
 'o','MarkerFaceColor',[1 1 1], 'MarkerEdgeColor','k',...
 'LineWidth',2,'SizeData',50);
+L_plot = line('XData',X0,'YData',Y0,'LineWidth',1.5,'Color',[1 1 1]);
 hold off;
+axis equal;
+expand_axis(3);
+% axis(5*[-0.5 1.5 -0.3 0.3]);
+axis manual;
+drawnow;
+
 
 avg_edge_len = avgedge(V,F); % before loop
 
@@ -164,8 +158,10 @@ for ai = 1:size(T_list,1)
       Ud = (U-U0)/dt;
 
       t.Vertices = V+reshape(U,size(V,2),size(V,1))';
-      set(D_plot,'XData',new_C(:,1));
-      set(D_plot,'YData',new_C(:,2));
+      set(C_plot,'XData',new_C(:,1));
+      set(C_plot,'YData',new_C(:,2));
+      set(L_plot,'XData',X);
+      set(L_plot,'YData',Y);
       title(sprintf('%d',ai),'Fontsize',20);
       drawnow;
      

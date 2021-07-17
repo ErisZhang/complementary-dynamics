@@ -1,7 +1,7 @@
 function set_project_path()
 
-    addpath('../utils');
-    addpath('../mex');
+    addpath('../../matlab-include/utils');
+    addpath('../../matlab-include/mex');
     addpath(genpath('../../gptoolbox'));
     addpath(genpath('../../Bartels/matlab'));
     
