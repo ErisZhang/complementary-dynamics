@@ -7,7 +7,7 @@ Public code release for the SIGGRAPH Asia 2020 paper [Complementary Dynamics](ht
 [libigl](https://github.com/libigl)\
 [gptoolbox](https://github.com/alecjacobson/gptoolbox)\
 [Bartels](https://github.com/dilevin/Bartels)\
-[triangle](https://github.com/libigl/triangle)\
+[triangle](https://github.com/libigl/triangle)
 
 # Setup
 
@@ -28,8 +28,10 @@ Compile mex functions in gptoolbox:
     cmake ..
     make -j8
 
-
 make sure `gptoolbox/wrappers/path_to_triangle.m` to indiciate your [tirangle](https://github.com/libigl/triangle) binary.
+
+Compile mex functions in `matlab-include/mex` by running `matlab-include/mex/compileAllMex.m` in Matlab.
+
 
 # Run
 
