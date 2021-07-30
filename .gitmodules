@@ -7,3 +7,6 @@
 [submodule "libigl"]
 	path = libigl
 	url = https://github.com/libigl/libigl.git
+[submodule "triangle"]
+	path = triangle
+	url = https://github.com/libigl/triangle.git
