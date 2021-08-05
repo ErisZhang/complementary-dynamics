@@ -1,6 +1,6 @@
 # Complementary Dynamics
 
-Public code release for the SIGGRAPH Asia 2020 paper [Complementary Dynamics](https://www.dgp.toronto.edu/projects/complementary-dynamics/) by Jiayi Eris Zhang, Seungbae Bang, David I.W. Levin and Alec Jacobson.
+Public Matlab code release for the SIGGRAPH Asia 2020 paper [Complementary Dynamics](https://www.dgp.toronto.edu/projects/complementary-dynamics/) by Jiayi Eris Zhang, Seungbae Bang, David I.W. Levin and Alec Jacobson.
 
 # Dependency
 
@@ -37,4 +37,17 @@ Compile mex functions in `matlab-include/mex` by running `matlab-include/mex/com
 
 This code runs in Matlab.\
 Before running examples, make sure to `addpath` your root directory of this project.\
-Then, try run examples scripts in `examples` in Matlab
+Then, try run examples scripts in `examples` in Matlab.\
+For example, try run `examples\bird\bird.m` and you should be getting result like this:
+
+<img width="400" src="showcases/bird_out.gif">
+
+
+# Bibtex
+
+    @article{Zhang:CompDynamics:2020,
+      title = {Complementary Dynamics},
+      author = {Jiayi Eris Zhang and Seungbae Bang and David I.W. Levin and Alec Jacobson},
+      year = {2020},
+      journal = {ACM Transactions on Graphics},
+    }

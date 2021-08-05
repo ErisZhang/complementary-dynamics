@@ -25,7 +25,7 @@ hold on;
 t = tsurf(F,V,'FaceColor',blue,'FaceAlpha',0.8,'EdgeAlpha',0.8);
 hold off;
 axis equal;
-axis(5*[-0.5 1.5 -0.3 0.3]);
+axis(5*[-0.5 2.3 -0.3 0.3]);
 axis manual;
 drawnow;
 
@@ -131,6 +131,5 @@ for ai=1:size(T_list,1)
       t.Vertices = V+reshape(U,size(V,2),size(V,1))';
       title(sprintf('%d',ai),'Fontsize',20);
       drawnow;
-      
 end
 
